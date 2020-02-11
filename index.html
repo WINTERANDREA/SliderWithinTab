@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="tab.js" defer></script>
+    <script src="slider.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/79ec4c1024.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Tabs with HTML, CSS and JS</title>
+  </head>
+  <body>
+    <ul class="tabs">
+      <li data-tab-target="#atrio" class="tab active">Atrio</li>
+      <li data-tab-target="#biblioteca" class="tab">Biblioteca</li>
+      <li data-tab-target="#sala_oro" class="tab">Sala Oro</li>
+      <li data-tab-target="#sala_rossa" class="tab">Sala Rossa</li>
+      <li data-tab-target="#sala_verde" class="tab">Sala Verde</li>
+      <li data-tab-target="#sala_rosa" class="tab">Sala Rosa</li>
+      <li data-tab-target="#cucina" class="tab">Cucina</li>
+      <li data-tab-target="#cortile" class="tab">Cortile</li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- ATRIO -->
+      <div id="atrio" data-tab-content class="active">
+        <div class="griglia">
+          <div class="slider_container">
+            <div class="slider">
+              <img
+                class="slide current"
+                src="/img/sala_oro/01_sala_oro.jpg"
+                alt=""
+              />
+              <img class="slide" src="/img/sala_oro/02_sala_oro.jpg" alt="" />
+              <img class="slide" src="/img/sala_oro/03_sala_oro.jpg" alt="" />
+            </div>
+            <div class="buttons">
+              <button id="prev">
+                <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button id="next">
+                <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description">
+            <h1>Atrio</h1>
+            <p>Paragrafo</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIBLIOTECA -->
+      <div id="biblioteca" data-tab-content>
+        <div class="griglia">
+          <div class="slider_container">
+            <div class="slider">
+              <img
+                class="slide current"
+                src="/img/sala_oro/01_sala_oro.jpg"
+                alt=""
+              />
+              <img class="slide" src="/img/sala_oro/02_sala_oro.jpg" alt="" />
+              <img class="slide" src="/img/sala_oro/03_sala_oro.jpg" alt="" />
+            </div>
+            <div class="buttons">
+              <button id="prev">
+                <i class="fas fa fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button id="next">
+                <i class="fas fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description">
+            <h1>Biblioteca</h1>
+            <p>Paragrafo</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sala_oro" data-tab-content>
+        <h1>Sala Oro</h1>
+        <p>Paragrafo</p>
+      </div>
+      <div id="sala_rossa" data-tab-content>
+        <h1>Sala Rossa</h1>
+        <p>Paragrafo</p>
+      </div>
+      <div id="sala_verde" data-tab-content>
+        <h1>Sala Verde</h1>
+        <p>Paragrafo</p>
+      </div>
+      <div id="sala_rosa" data-tab-content>
+        <h1>Sala Rosa</h1>
+        <p>Paragrafo</p>
+      </div>
+      <div id="cucina" data-tab-content>
+        <h1>Cucina</h1>
+        <p>Paragrafo</p>
+      </div>
+      <div id="cortile" data-tab-content>
+        <h1>Cortile</h1>
+        <p>Paragrafo</p>
+      </div>
+    </div>
+  </body>
+</html>
